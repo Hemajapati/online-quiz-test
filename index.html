@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body class="center">
+  <form onsubmit="login(event)">
+    <h2>Quiz Login</h2>
+    <input type="text" id="username" placeholder="Enter Name" required>
+    <button type="submit">Start Quiz</button>
+  </form>
+
+<script>
+function login(e) {
+  e.preventDefault();
+  localStorage.setItem("user", document.getElementById("username").value);
+  window.location.href = "quiz.html";
+}
+</script>
+</body>
+</html>

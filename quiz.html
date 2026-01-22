@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Quiz</title>
+  <link rel="stylesheet" href="result.css">
+</head>
+<body>
+
+<div class="quiz-container">
+  <div class="sidebar">
+    <h3>Questions</h3>
+    <div id="questionList"></div>
+    <p>Time Left: <span id="time">300</span>s</p>
+    <button onclick="submitQuiz()">Submit</button>
+  </div>
+
+  <div class="content">
+    <h2 id="questionText"></h2>
+    <div id="options"></div>
+  </div>
+</div>
+
+<script src="quiz.js"></script>
+</body>
+</html>
